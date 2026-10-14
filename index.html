@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desmon | Virtual Assistant Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f7f2;
+            color: #35443b;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #526c59;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #35443b;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #7a987f;
+        }
+
+        .hero {
+            padding: 100px 8%;
+            text-align: center;
+            background: #e8eee5;
+        }
+
+        .hero span {
+            color: #708b74;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            line-height: 1.2;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #59665d;
+        }
+
+        .button {
+            display: inline-block;
+            background: #526c59;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background: #3f5746;
+        }
+
+        .button-light {
+            background: transparent;
+            color: #526c59;
+            border: 1px solid #526c59;
+        }
+
+        section {
+            padding: 75px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .services {
+            background: #ffffff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background: #f8f7f2;
+            padding: 28px;
+            border-radius: 10px;
+            border: 1px solid #e5e8df;
+        }
+
+        .card h3 {
+            margin: 12px 0;
+            color: #526c59;
+        }
+
+        .icon {
+            font-size: 30px;
+        }
+
+        .projects .card {
+            background: #ffffff;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e8eee5;
+            color: #526c59;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #e8eee5;
+        }
+
+        .contact p {
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+
+        footer {
+            background: #35443b;
+            color: #ffffff;
+            text-align: center;
+            padding: 22px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0 6px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 70px 6%;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Nurul Amalina Binti Noor Hadee.</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <span>YOUR RELIABLE REMOTE SUPPORT PARTNER</span>
+
+            <h1>Welcome to My<br>Virtual Assistant Portfolio</h1>
+
+            <p>
+                Helping businesses stay organised through reliable
+                administrative support, accurate data entry, email
+                management, and document organisation.
+            </p>
+
+            <a href="#portfolio" class="button">Explore My Work</a>
+            <a href="#contact" class="button button-light">Get in Touch</a>
+        </section>
+
+        <section id="about">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>A little introduction</p>
+            </div>
+
+            <div class="about">
+                <p>
+                    Hi, I'm Nurul Amalina Binti Noor Hadee, an administrative professional with
+                    experience in administration, human resources,
+                    procurement, data handling, and document management.
+                </p>
+
+                <br>
+
+                <p>
+                    I enjoy organising information, maintaining accurate
+                    records, and helping teams manage their daily tasks
+                    more efficiently. I am detail-oriented, adaptable,
+                    and committed to delivering organised and dependable
+                    work.
+                </p>
+
+                <br>
+
+                <p>
+                    I am also fluent in Malay and comfortable communicating
+                    with clients and colleagues in a professional manner.
+                </p>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="section-title">
+                <h2>My Services</h2>
+                <p>Practical support to keep your business organised</p>
+            </div>
+
+            <div class="grid">
+
+                <div class="card">
+                    <div class="icon">📊</div>
+                    <h3>Data Entry</h3>
+                    <p>
+                        Accurate data entry, spreadsheet updates,
+                        data collection, and record organisation.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">📧</div>
+                    <h3>Email Management</h3>
+                    <p>
+                        Email sorting, inbox organisation,
+                        draft replies, and follow-up tracking.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">📁</div>
+                    <h3>Administrative Support</h3>
+                    <p>
+                        Document preparation, file organisation,
+                        record keeping, and daily admin tasks.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">👥</div>
+                    <h3>HR Administration</h3>
+                    <p>
+                        Employee records, staff trackers,
+                        recruitment documentation, and HR data entry.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🧾</div>
+                    <h3>Receipt Data Entry</h3>
+                    <p>
+                        Organising receipt details, recording
+                        transactions, and entering information
+                        into spreadsheets or suitable apps.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🔎</div>
+                    <h3>Online Research</h3>
+                    <p>
+                        Information searching, data collection,
+                        list building, and organised research results.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="projects" id="portfolio">
+            <div class="section-title">
+                <h2>My Portfolio Projects</h2>
+                <p>Practice projects demonstrating my working approach</p>
+            </div>
+
+            <div class="grid">
+
+                <div class="card">
+                    <div class="icon">📧</div>
+                    <h3>Email Organisation</h3>
+                    <p>
+                        A sample project demonstrating how emails can
+                        be categorised, prioritised, and organised
+                        for easier follow-up.
+                    </p>
+                    <span class="tag">Practice Project</span>
+                </div>
+
+                <div class="card">
+                    <div class="icon">📋</div>
+                    <h3>Receipt Data Entry</h3>
+                    <p>
+                        A sample workflow for recording receipt dates,
+                        descriptions, categories, and amounts in
+                        an organised spreadsheet.
+                    </p>
+                    <span class="tag">Practice Project</span>
+                </div>
+
+                <div class="card">
+                    <div class="icon">👥</div>
+                    <h3>Employee Tracker</h3>
+                    <p>
+                        A sample employee tracking sheet designed
+                        to organise staff details, job roles,
+                        and document status.
+                    </p>
+                    <span class="tag">Practice Project</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="section-title">
+                <h2>Let's Work Together</h2>
+            </div>
+
+            <p>
+                Looking for someone to help with data entry,
+                administrative tasks, or document organisation?
+                I'd be happy to discuss how I can support your work.
+            </p>
+
+            <a
+                href="https://www.upwork.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button"
+            >
+                Visit Upwork
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Desmon | Virtual Assistant Portfolio</p>
+        <p>Organised work. Reliable support.</p>
+    </footer>
+
+</body>
+</html>
